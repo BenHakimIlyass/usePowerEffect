@@ -25,8 +25,8 @@ const Power = styled(a.div)`
   &::after {
     content: "";
     position: absolute;
-    width: 180px;
-    height: 180px;
+    width: 200px;
+    height: 200px;
   }
 `;
 const Card = styled.div`
