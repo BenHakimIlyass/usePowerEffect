@@ -3,13 +3,13 @@ import { useSpring } from "react-spring";
 const useClickPower = () => {
   const [props, set] = useSpring(() => ({
     opacity: 0.3,
-    xys: [0.1, 0, 0.1]
+    xys: [0.1, 0, 0]
   }));
   const args = props.xys.payload;
   const handleClick = e => {
     set({ xys: [args[0], args[1], 3], opacity: 1 });
     setTimeout(() => {
-      set({ xys: [args[0], args[1], 0.1], opacity: 0.3 });
+      set({ xys: [args[0], args[1], 0.1], opacity: 0 });
     }, 500);
   };
 
