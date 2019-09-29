@@ -1,2 +1,0 @@
-# usePowerEffect
-Created with CodeSandbox
